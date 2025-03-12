@@ -23,9 +23,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#dissertation">Dissertation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dissertation">Dissertation</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,72 +62,8 @@
                 </div>
             </div>
         </section>
-        <!-- Dissertation section-->
-        <section class="bg-light" id="dissertation">
-            <div class="container px-4">
-                <div class="row gx-4 mx-3 justify-content-center">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>PhD Dissertation Defense</h2>
-                        <p class="lead">
-                            <strong>Title:</strong> Language Models and Knowledge Representations.<br/>
-                            <strong>When:</strong> September 2025.<br/>
-                            <strong>Where:</strong> Room TBA, Chalmers University of Technology, Gothenburg, Sweden.<br/>
-                        </p>
-                        <p class="lead">
-                            My doctoral studies have mainly focused on the intersection between language models (LMs) and knowledge representations. Given that LMs are increasingly used as simpler interfaces to factual knowledge, we need models that not only are accurate, but also factually consistent, updatable and, ultimately, reliable. The body of work that will be discussed during my PhD defense touch upon these topics in different manners:
-                        </p>
-                        <fieldset>
-                        <legend class="text-muted">📑 #1</legend>
-                            <div class="text">
-                            <h3>Transferring Knowledge from Vision to Language: How to Achieve it and how to Measure it?</h3>
-                            <p>
-                                <a href="https://aclanthology.org/2021.blackboxnlp-1.10/" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">BlackboxNLP Workshop 2021</a>
-                            </p>
-                            LM hallucinations, i.e. inaccurate and potentially misleading model outputs, may originate from training on incomplete knowledge sources. For example, text data suffers from reporting bias such that it mainly reports novel information rather than trivial information. In this paper, we hypothesise that LMs may form more complete knowledge representations if they are trained on more comprehensive sources of knowledge, such as information from additional modalities apart from text. We investigate whether LMs can obtain and represent knowledge from training on visual information, to be able to express it in a textual modality. We propose a dataset, Memory Colors, for evaluating this transfer capability and a model, CLIP-BERT, that can be trained on visual information. Our results show that it is possible to leverage visual information training to complement the knowledge of a LM.
-                        </fieldset>
-                        <fieldset>
-                        <legend class="text-muted">📑 #2</legend>
-                            <div class="text">
-                            <h3>The Effect of Scaling, Retrieval Augmentation and Form on the Factual Consistency of Language Models</h3>
-                            <p>
-                                <a href="https://aclanthology.org/2023.emnlp-main.332/" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">EMNLP 2023</a>
-                            </p>
-                            LMs struggle to provide consistent answers to paraphrased questions asking for factual information. This is problematic, as LMs should be consistent when used as interfaces to factual knowledge. In this paper, we investigate potential approaches for improving the factual consistency of LMs. We find that retrieval augmentation, as represented by the Atlas model, works best for improving model consistency compared model upscaling, for which an Atlas model with 330M parameters and access to Wikipedia outperforms a Llama model with 65B parameters. We also find that syntactic form impacts consistency – LMs are more likely to fail to provide consistent predictions if the consistent prediction results in an unidiomatic sentence. 
-                        </fieldset>
-                        <fieldset>
-                            <legend class="text-muted">📑 #3</legend>
-                            <div class="text">
-                            <h3>A Reality Check on Context Utilisation for Retrieval-Augmented Generation</h3>
-                            <p>
-                                <a href="https://arxiv.org/abs/2412.17031" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
-                            </p>
-                            Retrieval-augmented generation (RAG), i.e. retrieving contexts from an external knowledge source, can be used to alleviate limitations of the parametric knowledge of LMs. However, investigations of how LMs utilise retrieved information of varying complexity in real-world scenarios have been limited to synthetic contexts. In this paper, we introduce DRUID, a dataset with real-world queries and contexts. The dataset is based on the prototypical task of automated claim verification, for which automated retrieval of real-world evidence is crucial. We compare DRUID to synthetic datasets (CounterFact, ConflictQA) to find that artificial datasets often fail to represent the complex and diverse real-world context settings, yielding misleading results when used to study LM context utilisation. Overall, this paper underscores the need for real-world aligned context utilisation studies to represent and improve performance in real-world RAG settings.
-                        </fieldset>
-                        <fieldset>
-                            <legend class="text-muted">📑 #4</legend>
-                            <div class="text">
-                            <h3>Fact Recall, Heuristics or Pure Guesswork? Precise Interpretations of Language Models for Fact Completion</h3>
-                            <!-- <a href="https://arxiv.org/abs/2410.14405" target="_blank">Arxiv</a> (under review for ACL 2025)<br/> -->
-                            <p>
-                                <a href="https://arxiv.org/abs/2410.14405" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
-                            </p>
-                            Moving back to studying the parametric knowledge of LMs, this paper inspects previous interpretations of LMs for fact completion from the perspective of diagnostic data. Previous model interpretations pay little attention to the samples used to elicit and study factual associations of LMs, and it is not known whether samples of different characteristics may elicit different factual associations in LMs. In this paper, we identify four different prediction scenarios for fact completion: Generic language modeling, guesswork, heuristics recall and exact fact recall. We introduce a method for creating datasets with samples of each prediction scenario and show how two popular interpretability methods (causal tracing, studies of information flow) yield distinct results for each scenario. Results for exact fact recall and generic language modeling scenarios confirm previous conclusions about the importance of mid-range MLP sublayers for fact recall, while results for guesswork and heuristics indicate a critical role of late last token position MLP sublayers. In summary, this paper contributes resources for a more extensive and granular study of fact completion in LMs, together with analyses that provide a more nuanced understanding of how LMs process fact-related queries.
-                        </fieldset>
-                        <fieldset>
-                            <legend class="text-muted">📑 #5</legend>
-                            <div class="text">
-                            <h3>Language Model Re-rankers are Steered by Lexical Similarities</h3>
-                            <p>
-                                <a href="https://arxiv.org/abs/2502.17036" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
-                            </p>
-                            Focusing again on RAG, we scrutinise the performance of LM re-rankers used to refine retrieval results for RAG. LM re-rankers are more expensive to use compared to simpler methods based on lexical matching, like BM25, while the assumption is that they are better at identifying helpful context. We evaluate 6 different LM re-rankers on the NQ, LitQA2 and DRUID datasets to measure the benefit of using LM re-rankers compared to simpler methods. Our results show that LM re-rankers struggle to outperform a simple BM25 re-ranker on DRUID. Leveraging a novel separation metric based on BM25 scores, we find that LM re-rankers heavily depend on simple lexical similarities, such that a helpful passage with low lexical similarity to the query is likely to go undetected. Taken together, this paper identifies and explains novel weaknesses of LM re-rankers and points to the need of more adversarial and realistic evaluation datasets to accurately estimate LM re-ranker performance for RAG.
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Publications section-->
-        <section id="publications">
+        <section class="bg-light" id="publications">
             <div class="container px-4">
                 <div class="row gx-4 mx-3 justify-content-center">
                     <div class="col-lg-8 mx-auto">
@@ -192,7 +128,7 @@
             </div>
         </section>
         <!-- Teaching section-->
-        <section class="bg-light" id="teaching">
+        <section id="teaching">
             <div class="container px-4">
                 <div class="row gx-4 mx-3 mb-5 justify-content-center">
                     <div class="col-lg-8 mx-auto">
@@ -202,6 +138,70 @@
                             
                             I also work as a teaching assistant for the courses <a href="https://www.chalmers.se/en/education/your-studies/find-course-and-programme-syllabi/course-syllabus/DAT435/?acYear=2022%2F2023" target="_blank" class="text-decoration-none">Applied mathematical thinking</a>, <a href="https://www.chalmers.se/en/education/your-studies/find-course-and-programme-syllabi/course-syllabus/TDA233/?acYear=2022/2023" target="_blank" class="text-decoration-none">Algorithms for machine learning and inference</a> and <a href="https://www.chalmers.se/en/education/your-studies/find-course-and-programme-syllabi/course-syllabus/DAT341/?acYear=2022%2F2023" target="_blank" class="text-decoration-none">Applied Machine Learning</a> at Chalmers. 
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dissertation section-->
+        <section class="bg-light" id="dissertation">
+            <div class="container px-4">
+                <div class="row gx-4 mx-3 justify-content-center">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>PhD Dissertation Defense</h2>
+                        <p class="lead">
+                            <strong>Title:</strong> Language Models and Knowledge Representations.<br/>
+                            <strong>When:</strong> September 2025.<br/>
+                            <strong>Where:</strong> Room TBA, Chalmers University of Technology, Gothenburg, Sweden.<br/>
+                        </p>
+                        <p class="lead">
+                            My doctoral studies have mainly focused on the intersection between language models (LMs) and knowledge representations. Given that LMs are increasingly used as simpler interfaces to factual knowledge, we need models that not only are accurate, but also factually consistent, updatable and, ultimately, reliable. The body of work that will be discussed during my PhD defense touch upon these topics in different manners:
+                        </p>
+                        <fieldset>
+                        <legend class="text-muted">📑 #1</legend>
+                            <div class="text">
+                            <h3>Transferring Knowledge from Vision to Language: How to Achieve it and how to Measure it?</h3>
+                            <p>
+                                <a href="https://aclanthology.org/2021.blackboxnlp-1.10/" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">BlackboxNLP Workshop 2021</a>
+                            </p>
+                            LM hallucinations, i.e. inaccurate and potentially misleading model outputs, may originate from training on incomplete knowledge sources. For example, text data suffers from reporting bias such that it mainly reports novel information rather than trivial information. In this paper, we hypothesise that LMs may form more complete knowledge representations if they are trained on more comprehensive sources of knowledge, such as information from additional modalities apart from text. We investigate whether LMs can obtain and represent knowledge from training on visual information, to be able to express it in a textual modality. We propose a dataset, Memory Colors, for evaluating this transfer capability and a model, CLIP-BERT, that can be trained on visual information. Our results show that it is possible to leverage visual information training to complement the knowledge of a LM.
+                        </fieldset>
+                        <fieldset>
+                        <legend class="text-muted">📑 #2</legend>
+                            <div class="text">
+                            <h3>The Effect of Scaling, Retrieval Augmentation and Form on the Factual Consistency of Language Models</h3>
+                            <p>
+                                <a href="https://aclanthology.org/2023.emnlp-main.332/" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">EMNLP 2023</a>
+                            </p>
+                            LMs struggle to provide consistent answers to paraphrased questions asking for factual information. This is problematic, as LMs should be consistent when used as interfaces to factual knowledge. In this paper, we investigate potential approaches for improving the factual consistency of LMs. We find that retrieval augmentation, as represented by the Atlas model, works best for improving model consistency compared model upscaling, for which an Atlas model with 330M parameters and access to Wikipedia outperforms a Llama model with 65B parameters. We also find that syntactic form impacts consistency – LMs are more likely to fail to provide consistent predictions if the consistent prediction results in an unidiomatic sentence. 
+                        </fieldset>
+                        <fieldset>
+                            <legend class="text-muted">📑 #3</legend>
+                            <div class="text">
+                            <h3>A Reality Check on Context Utilisation for Retrieval-Augmented Generation</h3>
+                            <p>
+                                <a href="https://arxiv.org/abs/2412.17031" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
+                            </p>
+                            Retrieval-augmented generation (RAG), i.e. retrieving contexts from an external knowledge source, can be used to alleviate limitations of the parametric knowledge of LMs. However, investigations of how LMs utilise retrieved information of varying complexity in real-world scenarios have been limited to synthetic contexts. In this paper, we introduce DRUID, a dataset with real-world queries and contexts. The dataset is based on the prototypical task of automated claim verification, for which automated retrieval of real-world evidence is crucial. We compare DRUID to synthetic datasets (CounterFact, ConflictQA) to find that artificial datasets often fail to represent the complex and diverse real-world context settings, yielding misleading results when used to study LM context utilisation. Overall, this paper underscores the need for real-world aligned context utilisation studies to represent and improve performance in real-world RAG settings.
+                        </fieldset>
+                        <fieldset>
+                            <legend class="text-muted">📑 #4</legend>
+                            <div class="text">
+                            <h3>Fact Recall, Heuristics or Pure Guesswork? Precise Interpretations of Language Models for Fact Completion</h3>
+                            <!-- <a href="https://arxiv.org/abs/2410.14405" target="_blank">Arxiv</a> (under review for ACL 2025)<br/> -->
+                            <p>
+                                <a href="https://arxiv.org/abs/2410.14405" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
+                            </p>
+                            Moving back to studying the parametric knowledge of LMs, this paper inspects previous interpretations of LMs for fact completion from the perspective of diagnostic data. Previous model interpretations pay little attention to the samples used to elicit and study factual associations of LMs, and it is not known whether samples of different characteristics may elicit different factual associations in LMs. In this paper, we identify four different prediction scenarios for fact completion: Generic language modeling, guesswork, heuristics recall and exact fact recall. We introduce a method for creating datasets with samples of each prediction scenario and show how two popular interpretability methods (causal tracing, studies of information flow) yield distinct results for each scenario. Results for exact fact recall and generic language modeling scenarios confirm previous conclusions about the importance of mid-range MLP sublayers for fact recall, while results for guesswork and heuristics indicate a critical role of late last token position MLP sublayers. In summary, this paper contributes resources for a more extensive and granular study of fact completion in LMs, together with analyses that provide a more nuanced understanding of how LMs process fact-related queries.
+                        </fieldset>
+                        <fieldset>
+                            <legend class="text-muted">📑 #5</legend>
+                            <div class="text">
+                            <h3>Language Model Re-rankers are Steered by Lexical Similarities</h3>
+                            <p>
+                                <a href="https://arxiv.org/abs/2502.17036" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
+                            </p>
+                            Focusing again on RAG, we scrutinise the performance of LM re-rankers used to refine retrieval results for RAG. LM re-rankers are more expensive to use compared to simpler methods based on lexical matching, like BM25, while the assumption is that they are better at identifying helpful context. We evaluate 6 different LM re-rankers on the NQ, LitQA2 and DRUID datasets to measure the benefit of using LM re-rankers compared to simpler methods. Our results show that LM re-rankers struggle to outperform a simple BM25 re-ranker on DRUID. Leveraging a novel separation metric based on BM25 scores, we find that LM re-rankers heavily depend on simple lexical similarities, such that a helpful passage with low lexical similarity to the query is likely to go undetected. Taken together, this paper identifies and explains novel weaknesses of LM re-rankers and points to the need of more adversarial and realistic evaluation datasets to accurately estimate LM re-ranker performance for RAG.
+                        </fieldset>
                     </div>
                 </div>
             </div>
