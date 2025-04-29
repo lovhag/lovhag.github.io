@@ -193,15 +193,6 @@
                             </p>
                             Moving back to studying the parametric knowledge of LMs, this paper inspects previous interpretations of LMs for fact completion from the perspective of diagnostic data. Previous model interpretations pay little attention to the samples used to elicit and study factual associations of LMs, and it is not known whether samples of different characteristics may elicit different factual associations in LMs. In this paper, we identify four different prediction scenarios for fact completion: Generic language modeling, guesswork, heuristics recall and exact fact recall. We introduce a method for creating datasets with samples of each prediction scenario and show how two popular interpretability methods (causal tracing, studies of information flow) yield distinct results for each scenario. Results for exact fact recall and generic language modeling scenarios confirm previous conclusions about the importance of mid-range MLP sublayers for fact recall, while results for guesswork and heuristics indicate a critical role of late last token position MLP sublayers. In summary, this paper contributes resources for a more extensive and granular study of fact completion in LMs, together with analyses that provide a more nuanced understanding of how LMs process fact-related queries.
                         </fieldset>
-                        <fieldset>
-                            <legend class="text-muted">📑 #5</legend>
-                            <div class="text">
-                            <h3>Language Model Re-rankers are Steered by Lexical Similarities</h3>
-                            <p>
-                                <a href="https://arxiv.org/abs/2502.17036" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for ACL 2025)</small>
-                            </p>
-                            Focusing again on RAG, we scrutinise the performance of LM re-rankers used to refine retrieval results for RAG. LM re-rankers are more expensive to use compared to simpler methods based on lexical matching, like BM25, while the assumption is that they are better at identifying helpful context. We evaluate 6 different LM re-rankers on the NQ, LitQA2 and DRUID datasets to measure the benefit of using LM re-rankers compared to simpler methods. Our results show that LM re-rankers struggle to outperform a simple BM25 re-ranker on DRUID. Leveraging a novel separation metric based on BM25 scores, we find that LM re-rankers heavily depend on simple lexical similarities, such that a helpful passage with low lexical similarity to the query is likely to go undetected. Taken together, this paper identifies and explains novel weaknesses of LM re-rankers and points to the need of more adversarial and realistic evaluation datasets to accurately estimate LM re-ranker performance for RAG.
-                        </fieldset>
                     </div>
                 </div>
             </div>
