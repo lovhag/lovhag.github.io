@@ -70,6 +70,11 @@
                         <h2>Publications</h2>
                         <h3>2025</h3>
                         <p>
+                            <a href="https://arxiv.org/abs/2505.16518" target="_blank">CUB: Benchmarking Context Utilisation Techniques for Language Models</a><br/>
+                            <strong>Lovisa Hagström</strong>, Youna Kim, Haeun Yu, Sang-goo Lee, Richard Johansson, Hyunsoo Cho, Isabelle Augenstein<br/>
+                            <em>Arxiv</em>
+                        </p>
+                        <p>
                             <a href="https://arxiv.org/abs/2412.17031" target="_blank">A Reality Check on Context Utilisation for Retrieval-Augmented Generation</a><br/>
                             <strong>Lovisa Hagström</strong>, Sara Vera Marjanović, Haeun Yu, Arnav Arora, Christina Lioma, Maria Maistro, Pepa Atanasova, Isabelle Augenstein<br/>
                             <em>Accepted to ACL Main</em>
@@ -190,6 +195,15 @@
                                 <a href="https://arxiv.org/abs/2410.14405" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Accepted to ACL Findings 2025</a>
                             </p>
                             Moving back to studying the parametric knowledge of LMs, this paper inspects previous interpretations of LMs for fact completion from the perspective of diagnostic data. Previous model interpretations pay little attention to the samples used to elicit and study factual associations of LMs, and it is not known whether samples of different characteristics may elicit different factual associations in LMs. In this paper, we identify four different prediction scenarios for fact completion: Generic language modeling, guesswork, heuristics recall and exact fact recall. We introduce a method for creating datasets with samples of each prediction scenario and show how two popular interpretability methods (causal tracing, studies of information flow) yield distinct results for each scenario. Results for exact fact recall and generic language modeling scenarios confirm previous conclusions about the importance of mid-range MLP sublayers for fact recall, while results for guesswork and heuristics indicate a critical role of late last token position MLP sublayers. In summary, this paper contributes resources for a more extensive and granular study of fact completion in LMs, together with analyses that provide a more nuanced understanding of how LMs process fact-related queries.
+                        </fieldset>
+                        <fieldset>
+                            <legend class="text-muted">📑 #5</legend>
+                            <div class="text">
+                            <h3>CUB: Benchmarking Context Utilisation Techniques for Language Models</h3>
+                            <p>
+                                <a href="https://arxiv.org/abs/2505.16518" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .1rem">Arxiv</a> <small>(under review for EMNLP 2025)</small>
+                            </p> 
+                            Building on Paper #3, this paper takes a closer look at LM context utilisation and methods for manipulating context utilisation. Context utilisation is a key component of LMs used for RAG, as the benefits of retrieving external information are only realised if the generative model makes adequate use of the retrieved information. Many context utilisation manipulation techniques (CMTs) have recently been proposed, while none have seen unified comparison. We develop CUB (Context Utilisation Benchmark) to allow for a comprehensive evaluation and comparison of CMTs. CUB systematically tests the sensitivity of CMTs to underlying model and naturally occurring context types (gold, conflicting and irrelevant) on tasks representative of synthesised and realistic RAG scenarios. In summary, this paper provides a deeper analysis of what CMT works best for a given scenario and identified areas of improvement for CMTs.
                         </fieldset>
                     </div>
                 </div>
